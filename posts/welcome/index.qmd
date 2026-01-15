@@ -1,0 +1,15 @@
+---
+title: "Welcome To My Blog"
+author: "Harrison Li"
+date: "2026-01-12"
+categories: [news]
+---
+
+This is the first post in a Quarto blog. Welcome!
+
+![](thumbnail.jpg)
+
+This is my first blog post to test on how to post a blog using quarto.
+
+This blog post is modified directly from the template provided by quarto.
+

@@ -1,0 +1,18 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/harrison-l-b7253a23a
+    - icon: github
+      text: Github
+      href: https://github.com/Harrisonlee0530
+
+---
+
+Hello there!
+
+I am a highly motivated graduate student in Masters of Data Science @ UBC with a strong foundation in physics and computational methods, interested in data science and computational modeling for solving real-world problems. My academic journey has equipped me with a diverse skill set spanning physics, mathematics, and programming, which I apply to tackle complex challenges. I am eager to contribute my analytical abilities and technical expertise to innovative projects while continuing to expand my knowledge and professional experience in my graduate studies.
