@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Harrison Li">
+<meta name="dcterms.date" content="2026-01-15">
 
-<title>Blog – myblog</title>
+<title>Gravitational Waves Explained: How We Measure Them and What We Classify – myblog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,32 +22,53 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-ccd81253fefb92e9cd3f9eb5b5d87b54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ccd81253fefb92e9cd3f9eb5b5d87b54.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,67 +96,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -305,7 +270,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">myblog</span>
     </a>
   </div>
@@ -316,7 +281,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -340,170 +305,119 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Gravitational Waves Explained: How We Measure Them and What We Classify</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Physics</div>
+                <div class="quarto-category">Astronomy</div>
+                <div class="quarto-category">Astrophysics</div>
+                <div class="quarto-category">Data Science</div>
+                <div class="quarto-category">Classification</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Harrison Li </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 15, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXN0cm9ub215">Astronomy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXN0cm9waHlzaWNz">Astrophysics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2xhc3NpZmljYXRpb24=">Classification <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFNjaWVuY2U=">Data Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UGh5c2ljcw==">Physics <span class="quarto-category-count">(1)</span></div></div></div>
-<!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
     </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1768464000000" data-listing-file-modified-sort="1768507973450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="./posts/post-with-code/index.html" class="no-external">
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
 
+<div id="fig-gravitational-wave" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gravitational-wave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/LIGO-Lab-Gravity-Waves.jpg" class="img-fluid figure-img" style="width:80.0%">
 </div>
-<div class="delink listing-description"><a href="./posts/post-with-code/index.html" class="no-external">
-This is a post with executable code.
-</a></div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gravitational-wave-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Image of gravitational wave — Courtesy Caltech/MIT/LIGO Laboratory <span class="citation" data-cites="ligo_gravitational_waves_video">(<a href="#ref-ligo_gravitational_waves_video" role="doc-biblioref">LIGO Laboratory 2015</a>)</span>
+</figcaption>
+</figure>
 </div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2026
+<p>Gravitational Waves are the “ripples” in spacetime produced by the motion massive objects predicted by Einstein’s General Relativity. According to Einstein’s General Relativity, the precense of mass/energy curves space time, when the massive object starts moving, the curvature of spacetime also changes accordingly. The gravitational wave we are interested in are the ones created by massive objects such as binary systems of blackholes and neutron stars. As two massive objects orbits each other, it creates a spiral gravitational wave as shown in <a href="#fig-gravitational-wave" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<p>This allows astrophysicists to observe the universe in a new way other than using electromagnetic radiation. Since gravitational waves interacts very weakly with matter, we can detect the waves without distortions from objects between us and the source of the astronomical event.</p>
+<div id="fig-detector-schematic" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-detector-schematic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/LIGO_simplified.svg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;2: A Simplified Schematic diagram of a LIGO detector [@wiki:detector_schematic]"><img src="img/LIGO_simplified.svg.png" class="img-fluid figure-img" style="width:80.0%"></a>
 </div>
-<div class="listing-author">
-Harlow Malloc
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-detector-schematic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A Simplified Schematic diagram of a LIGO detector <span class="citation" data-cites="wiki:detector_schematic">(<a href="#ref-wiki:detector_schematic" role="doc-biblioref">Commons 2020</a>)</span>
+</figcaption>
+</figure>
 </div>
-</a>
+<p>A simplified schematic diagram of a gravitational-wave detector is shown in <a href="#fig-detector-schematic" class="quarto-xref">Figure&nbsp;2</a>. A laser beam is sent to a beam splitter, where it is divided into two beams that travel along perpendicular paths, each about 4 km long. At the end of each path, mirrors reflect the beams back toward the beam splitter, where they recombine and are measured by a photodetector. The detector is calibrated so the two beams are out of phase and cancel each other when they recombine under normal circumstances. When a gravitational wave passes through the detector, it slightly stretches one arm while compressing the other, changing the lengths of the paths. This prevents the beams from canceling perfectly, producing a signal that indicates the presence of a gravitational wave.</p>
+<div id="fig-first-observation" class="lightbox quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-first-observation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="img/LIGO_measurement_of_gravitational_waves.svg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;3: First measurement of gravitational waves GW150914 [@wiki:first_observation]. As the blackholes orbits each other, the distance between the two blackholes decrease, increasing the angular velocity, which increases the frequency of the gravitational wave. If the signal is converted to sound, it sounds like a chirp, which is why it is often reffered to as a chirp signal."><img src="img/LIGO_measurement_of_gravitational_waves.svg.png" class="img-fluid figure-img" style="width:80.0%"></a>
 </div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-first-observation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: First measurement of gravitational waves GW150914 <span class="citation" data-cites="wiki:first_observation">(<a href="#ref-wiki:first_observation" role="doc-biblioref">Commons 2025</a>)</span>. As the blackholes orbits each other, the distance between the two blackholes decrease, increasing the angular velocity, which increases the frequency of the gravitational wave. If the signal is converted to sound, it sounds like a chirp, which is why it is often reffered to as a chirp signal.
+</figcaption>
+</figure>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1768464000000" data-listing-file-modified-sort="1768518405251" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail"><a href="./posts/welcome/index.html" class="no-external">
+<p>The first detection of gravitational waves occurred in 2015 (see <a href="#fig-first-observation" class="quarto-xref">Figure&nbsp;3</a>, <a href="https://www.nobelprize.org/prizes/physics/2017/summary/">2017 Physics Nobel Prize</a>), caused by binary blackhole merger 1.3 billion lightyears away, detected by the Laser Interferometer Gravitational-Wave Observatory (LIGO).</p>
+<p>However, the detectors are extremely sensitive because they need to measure the incredibly tiny distortions of spacetime caused by gravitational waves. According to LIGO, the detectors need to be able to tell whether the length of a 4km arm change by a distance 10,000 times smaller than the diameter of a proton <span class="citation" data-cites="ligo20161018">LIGO Laboratory (<a href="#ref-ligo20161018" role="doc-biblioref">2016</a>)</span>. This extreme sensitivity also means they pick up many other sources of vibration, such as earthquakes, traffic, or local environmental noise known as glitches <a href="#fig-glitches" class="quarto-xref">Figure&nbsp;4</a>. As a result, classifying which signals are true gravitational waves and noise is a critical and challenging task.</p>
+<div id="fig-glitches" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-glitches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/different_glitches.jpg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-glitches-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Different classes of glitches in Gravity Spy, a crowd source classification project by LIGO <span class="citation" data-cites="glanzer2023data">Glanzer et al. (<a href="#ref-glanzer2023data" role="doc-biblioref">2023</a>)</span>
+</figcaption>
+</figure>
+</div>
 
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
 
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-wiki:detector_schematic" class="csl-entry" role="listitem">
+Commons, Wikimedia. 2020. <span>“File:LIGO Simplified.svg — Wikimedia Commons<span>,</span> the Free Media Repository.”</span> <a href="https://commons.wikimedia.org/w/index.php?title=File:LIGO_simplified.svg&amp;oldid=490326135">https://commons.wikimedia.org/w/index.php?title=File:LIGO_simplified.svg&amp;oldid=490326135</a>.
 </div>
-<div class="delink listing-description"><a href="./posts/welcome/index.html" class="no-external">
-This is the first post in a Quarto blog. Welcome!
-</a></div>
+<div id="ref-wiki:first_observation" class="csl-entry" role="listitem">
+———. 2025. <span>“File:LIGO Measurement of Gravitational Waves.svg — Wikimedia Commons<span>,</span> the Free Media Repository.”</span> <a href="https://commons.wikimedia.org/w/index.php?title=File:LIGO_measurement_of_gravitational_waves.svg&amp;oldid=1073375897">https://commons.wikimedia.org/w/index.php?title=File:LIGO_measurement_of_gravitational_waves.svg&amp;oldid=1073375897</a>.
 </div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2026
+<div id="ref-glanzer2023data" class="csl-entry" role="listitem">
+Glanzer, J., S. Banagiri, S. B. Coughlin, S. Soni, M. Zevin, C. P. L. Berry, O. Patane, et al. 2023. <span>“Data Quality up to the Third Observing Run of Advanced LIGO: Gravity Spy Glitch Classifications.”</span> <em>Classical and Quantum Gravity</em> 40 (6): 065004. <a href="https://doi.org/10.1088/1361-6382/acb633">https://doi.org/10.1088/1361-6382/acb633</a>.
 </div>
-<div class="listing-author">
-Harrison Li
+<div id="ref-ligo_gravitational_waves_video" class="csl-entry" role="listitem">
+LIGO Laboratory. 2015. <span>“Gravitational Waves [Video].”</span> Online educational animation. <a href="https://www.ligo.caltech.edu/video/gravitational-waves">https://www.ligo.caltech.edu/video/gravitational-waves</a>.
 </div>
-</a>
+<div id="ref-ligo20161018" class="csl-entry" role="listitem">
+———. 2016. <span>“LIGO Launches <span>‘Gravity Spy’</span> Citizen Science Program.”</span> LIGO News Release. <a href="https://www.ligo.caltech.edu/news/ligo20161018">https://www.ligo.caltech.edu/news/ligo20161018</a>.
 </div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UGh5c2ljcyUyQ0FzdHJvbm9teSUyQ0FzdHJvcGh5c2ljcyUyQ0RhdGElMjBTY2llbmNlJTJDQ2xhc3NpZmljYXRpb24=" data-listing-date-sort="1768464000000" data-listing-file-modified-sort="1768520371118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="467">
-<div class="thumbnail"><a href="./posts/gravitational-wave-classification/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/gravitational-wave-classification/img/LIGO-Lab-Gravity-Waves.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/gravitational-wave-classification/index.html" class="no-external">Gravitational Waves Explained: How We Measure Them and What We Classify</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGh5c2ljcw=='); return false;">Physics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9ub215'); return false;">Astronomy</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXN0cm9waHlzaWNz'); return false;">Astrophysics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2xhc3NpZmljYXRpb24='); return false;">Classification</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/gravitational-wave-classification/index.html" class="no-external">
-Gravitational Waves are the “ripples” in spacetime produced by the motion massive objects predicted by Einstein’s General Relativity. According to Einstein’s General…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/gravitational-wave-classification/index.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2026
-</div>
-<div class="listing-author">
-Harrison Li
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -917,6 +831,38 @@ Harrison Li
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
