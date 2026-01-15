@@ -1,5 +1,9 @@
 project:
   type: website
+  output-dir: docs
+
+editor:
+  render-on-save: true
 
 website:
   title: "myblog"
@@ -10,12 +14,14 @@ website:
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: flatly
+      dark: darkly
+      # - cosmo
+      # - brand
     css: styles.css
-
-
+    toc: true
 
