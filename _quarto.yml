@@ -6,7 +6,7 @@ editor:
   render-on-save: true
 
 website:
-  title: "myblog"
+  title: "Harrison's Blog"
   navbar:
     right:
       - about.qmd
