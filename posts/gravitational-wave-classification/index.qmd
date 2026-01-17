@@ -53,3 +53,5 @@ This extreme sensitivity means the detectors also pick up many other sources of 
 To address this challenge, scientists use a combination of advanced data analysis techniques, including machine learning methods such as random forest classifiers @shah2023wavesforestrandomforest, image classification approaches @alvarezlopez2023gspynettreesignalvsglitchclassifiergravitationalwave, and cross-correlation between multiple detectors. LIGO operates two detectors in the United States, while additional observatories such as Virgo in Europe and KAGRA in Japan contribute to a global network. A genuine gravitational-wave signal should appear in multiple detectors with consistent timing and waveform properties, while local noise sources typically affect only one detector.
 
 Citizen science projects such as Gravity Spy further assist researchers by enlisting the public to help classify glitches. By combining human pattern recognition with machine learning algorithms, these projects improve the reliability and efficiency of gravitational-wave detection pipelines.
+
+# References
