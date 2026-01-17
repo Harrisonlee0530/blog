@@ -11,9 +11,11 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        text: Github
+        href: https://github.com/Harrisonlee0530
+      - icon: linkedin
+        text: LinkedIn
+        href: https://www.linkedin.com/in/harrison-l-b7253a23a
 
 format:
   html:
